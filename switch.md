@@ -135,3 +135,23 @@ switch (arg) {
 0이나 1을 입력한 경우엔 첫 번째 alert문이 실행됩니다.
 2를 입력한 경우엔 두 번째 alert문이 실행됩니다.
 3을 입력하였더라도 세 번째 alert문은 실행되지 않습니다. 앞서 배운 바와 같이 prompt 함수는 사용자가 입력 필드에 기재한 값을 문자열로 변환해 반환하기 때문에 숫자 3을 입력하더라도 prompt 함수는 문자열 '3'을 반환합니다. 그런데 세 번째 case문에선 사용자가 입력한 값과 숫자형 3을 비교하므로, 형 자체가 다르기 때문에 case 3 아래의 코드는 절대 실행되지 않습니다. 대신 default문이 실행됩니다.
+
+과제
+"switch"문을 "if"문으로 변환하기
+중요도: 5
+"switch"문을 사용해 작성된 아래 코드를 if..else문을 사용한 코드로 변환해 보세요.
+
+switch (browser) {
+  case 'Edge':
+    alert( "Edge를 사용하고 계시네요!" );
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    alert( '저희 서비스가 지원하는 브라우저를 사용하고 계시네요.' );
+    break;
+
+  default:
+    alert( '현재 페이지가 괜찮아 보이길 바랍니다!' );
